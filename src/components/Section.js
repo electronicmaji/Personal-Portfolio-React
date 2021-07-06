@@ -11,7 +11,7 @@ import FetchWorkplace from "./Work";
 
 
 
-function Body() {
+function Section() {
 
     const { colorMode } = useColorMode();
     const isDark = colorMode === "dark";
@@ -50,4 +50,4 @@ render(); {
 }
 }
 
-export default Body
+export default Section

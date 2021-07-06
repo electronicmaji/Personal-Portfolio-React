@@ -7,6 +7,7 @@ import React, { useState, useEffect } from "react";
 
 
 
+
 const Portfolio = () => (
     <Flex
       alignItems="center"
@@ -18,78 +19,76 @@ const Portfolio = () => (
           <Heading textAlign="center" as="h2" size="2xl">
             PORTFOLIO
           </Heading>
-          <Grid
-            templateColumns="repeat( auto-fit, minmax(250px, 1fr) )"
-            width="100%"
+          <Flex
+            flex=".5"
             gridGap={4}
+            transition="1.7s linear"
           >
-            <Box overflow="hidden" borderRadius={5}>
+            <Box overflow="hidden" borderRadius={50} transition="1.7s linear">
               <Image
-                src="https://picsum.photos/id/1001/300/200"
+                src="https://picsum.photos/id/1001/3000/2000"
                 transform="scale(1)"
-                transition=".3s ease-in-out"
-                w="full"
+                transition="1.7s ease-in-out"
+                h="30rem"
+                objectFit="cover"
                 _hover={{
-                  transform: "scale(1.3)"
+                  width: "full",
+                  transition: "width 1.7s ease-in",
                 }}
               />
             </Box>
-            <Box overflow="hidden" borderRadius={5}>
+            <Box overflow="hidden" borderRadius={50}>
+              <Image 
+                transition="width 1.7s ease-in-out"
+                h="30rem"
+                objectFit="cover"
+                _hover={{
+                  width: "full",
+                  transition: "width 1.7s ease-in"
+                }}
+                src="https://picsum.photos/id/1002/3000/2000"
+              />
+            </Box>
+            <Box overflow="hidden" borderRadius={50}>
               <Image
                 transform="scale(1)"
                 transition=".3s ease-in-out"
-                w="full"
+                h="30rem"
+                objectFit="cover"
                 _hover={{
-                  transform: "scale(1.3)"
+                  width: "full",
+                  transition: "width 1.7s ease-in"
                 }}
-                src="https://picsum.photos/id/1002/300/200"
+                src="https://picsum.photos/id/1003/3000/2000"
               />
             </Box>
-            <Box overflow="hidden" borderRadius={5}>
+            <Box overflow="hidden" borderRadius={50}>
               <Image
                 transform="scale(1)"
                 transition=".3s ease-in-out"
-                w="full"
+                h="30rem"
+                objectFit="cover"
                 _hover={{
-                  transform: "scale(1.3)"
+                  width: "full",
+                  transition: "width 1.7s ease-in"
                 }}
-                src="https://picsum.photos/id/1003/300/200"
+                src="https://picsum.photos/id/1004/3000/2000"
               />
             </Box>
-            <Box overflow="hidden" borderRadius={5}>
+            <Box overflow="hidden" borderRadius={50}>
               <Image
                 transform="scale(1)"
                 transition=".3s ease-in-out"
-                w="full"
+                h="30rem"
+                objectFit="cover"
                 _hover={{
-                  transform: "scale(1.3)"
+                  width: "full",
+                  transition: "width 1.7s ease-in"
                 }}
-                src="https://picsum.photos/id/1004/300/200"
+                src="https://picsum.photos/id/1005/3000/2000"
               />
             </Box>
-            <Box overflow="hidden" borderRadius={5}>
-              <Image
-                transform="scale(1)"
-                transition=".3s ease-in-out"
-                w="full"
-                _hover={{
-                  transform: "scale(1.3)"
-                }}
-                src="https://picsum.photos/id/1005/300/200"
-              />
-            </Box>
-            <Box overflow="hidden" borderRadius={5}>
-              <Image
-                transform="scale(1)"
-                transition=".3s ease-in-out"
-                w="full"
-                _hover={{
-                  transform: "scale(1.3)"
-                }}
-                src="https://picsum.photos/id/1006/300/200"
-              />
-            </Box>
-          </Grid>
+          </Flex>
         </Stack>
       </Container>
     </Flex>

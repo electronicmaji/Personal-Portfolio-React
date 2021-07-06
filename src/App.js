@@ -2,11 +2,11 @@ import { IconButton } from '@chakra-ui/button'
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, Spacer } from '@chakra-ui/layout';
 import { Heading } from '@chakra-ui/layout';
-import { VStack } from '@chakra-ui/layout';
+import { VStack, Box } from '@chakra-ui/layout';
 import { motion } from "framer-motion"
 import { FaSun,FaMoon, FaInstagram,FaGithub,FaLinkedin } from 'react-icons/fa'
 import Menu from "./components/Menu";
-import Body from "./components/Body";
+import Section from "./components/Section";
 import Profile from "./components/Profile";
 import Social from "./components/Social";
 import Portfolio from "./components/Portfolio";
@@ -21,15 +21,17 @@ function App() {
 
   
   return (
+  <Box borderWidth=".5rem" borderColor="White"  borderRadius="50px" bg="Gray.800">
    <VStack p={5}> 
      <Menu></Menu>
      <Switch>
-       <Route path="/" component={Body} exact />
+       <Route path="/" component={Section} exact />
        <Route path="/portfolio" component={Portfolio} />
        <Route path="/background" component={Background} />
        <Route path="/contact" component={Contact} />
      </Switch>
    </VStack>
+  </Box>
   )
 }
 

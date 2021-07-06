@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import theme from "./theme"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
-import "@fontsource/playfair-display/400.css"
 import "@fontsource/nunito/400.css"
 import "@fontsource/nunito/700.css"
 
